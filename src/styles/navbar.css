@@ -52,6 +52,9 @@
 
     .appbar {
         margin-bottom: 5px;
+        border-top: 8px solid #5a524f;
+        display: flex;
+        justify-content: space-between;
     }
 
     #navbar {
@@ -81,10 +84,6 @@
     .nav {
         display: none;
         border-bottom: none;
-    }
-
-    .appbar {
-        border-top: 8px solid #5a524f;
     }
 
     .hero-judul {

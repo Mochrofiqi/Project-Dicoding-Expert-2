@@ -26,7 +26,6 @@ header{
   text-align: center;
   margin: auto;
   font-size: 20px;
-  float: left;
   font-family: Cambria;
   color: #5a524f;
   padding: 10px;
@@ -42,12 +41,15 @@ header{
   width: 90%;
   margin: auto;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
 }
 
 .logo a {
   font-size: 40px;
   font-weight: 600;
-  float: left;
+  /* display: grid; */
   font-family: Cambria;
   /* position: absolute; */
   top: 10px;
@@ -60,19 +62,17 @@ header{
 .logo2 a {
   font-size: 40px;
   font-weight: 600;
-  float: right;
   font-family: Cambria;
-  /* position: absolute; */
   top: 10px;
   right: 15px;
   color: #5a524f;
   text-decoration: none;
-
+  margin-left: 7px;
 }
 
 .menu {
-  float: right;
-  margin: auto;
+  /* margin: auto; */
+  display: flex;
   
 }
 
@@ -95,11 +95,11 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  display: flex;
 }
 
 nav ul li {
-  float: left;
-  /* display: inline; */
+  text-decoration: none;
 }
 
 nav ul li a {
@@ -110,6 +110,8 @@ nav ul li a {
   padding: 0px 15px 0px 15px;
   text-decoration: none;
   /* margin: auto; */
+  height: 65px;
+  display: inline-block;
 }
 
 nav ul li a:hover {
@@ -206,12 +208,13 @@ a.btn2 {
   background: #6e695f;
   text-align: center;
   display: block;
-  margin: 0px 150px 0px 150px;
+  margin: 2px 150px 0px 150px;
   border-radius: 20px;
   padding: 12px 15px 12px 15px;
   color: white;
   cursor: pointer;
   font-weight: bold;
+  height: 24px;
 }
 
 a.btn2:hover {
