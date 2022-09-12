@@ -1,0 +1,65 @@
+.menu-list {
+    display: grid;
+    grid-column-gap: 35px;
+    grid-row-gap: 30px;
+}
+
+@media screen and (min-width : 720px) {
+    .menu-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+    }
+
+}
+
+@media screen and (min-width : 900px) {
+    .menu-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main .hero {
+        max-width: 100%;
+    }
+    main .head {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    main .content {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .hero {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .head {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        width: 100%;
+    }
+
+    #home .kolom {
+        margin: auto;
+    }
+
+    #home .kolom a{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .hero-judul {
+        padding-top: 115px;
+    }
+}

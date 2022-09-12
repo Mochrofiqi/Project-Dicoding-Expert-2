@@ -1,0 +1,117 @@
+@media screen and (max-width : 600px) {
+    #bar {
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        transform: translate(-255px, 0);
+        transition: transform 0.4s ease-in-out;
+        background-color: #111;
+        z-index: 98;
+    }
+
+    #bar.open {
+        transform: translate(0, 0)
+    }
+
+    #bar ul {
+        list-style-type: none;
+        display: grid;
+        padding: 10px;
+        background-color: #DCD7C9;
+
+    }
+
+    #bar ul li {
+        padding: 5px 5px;
+        z-index: 98;
+
+    }
+
+    #bar ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #4c433c;
+
+    }
+
+    .menu {
+        float: none;
+        position: absolute;
+        top: 5px;
+
+    }
+    .logo {
+        display: none;
+        /* float: none; */
+    }
+
+    .logo2 {
+        display: block;
+        margin-right: 8px;
+    }
+
+    .appbar {
+        margin-bottom: 5px;
+    }
+
+    #navbar {
+        font-size: 32px;
+        text-decoration: none;
+        color: black;
+        /* margin: auto; */
+        margin-left: 5px;
+        /* margin-bottom: 10px; */
+        max-width: 44px;
+        width: 44px;
+        height: 44px;
+        /* background-color: rgb(52, 38, 38); */    
+        z-index: 99;
+            
+    }
+
+    button {
+        margin-top: 3px;
+        border: 0;
+        background-color: transparent;
+        width: 44px;
+        height: 44px;
+        
+    }
+
+    .nav {
+        display: none;
+        border-bottom: none;
+    }
+
+    .appbar {
+        border-top: 8px solid #5a524f;
+    }
+
+    .hero-judul {
+        font-size: 42px;
+    }
+
+    .judul {
+        font-size: large;
+    }
+
+    .wrapper {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width : 600px) {
+    #navbar {
+        display: none;
+        z-index: 99;
+    }
+
+    #bar {
+        z-index: 98;
+    }
+    .logo2 {
+        display: none;
+        margin-bottom: 10px;
+    }
+}
+
