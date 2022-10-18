@@ -14,6 +14,9 @@
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.74.0",
@@ -152,6 +155,7 @@
     "human-signals": "^2.1.0",
     "iconv-lite": "^0.4.24",
     "icss-utils": "^5.1.0",
+    "idb": "^7.1.0",
     "import-local": "^3.1.0",
     "inflight": "^1.0.6",
     "inherits": "^2.0.4",
@@ -294,6 +298,7 @@
     "strip-final-newline": "^2.0.0",
     "supports-color": "^5.5.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
+    "sweetalert2": "^11.4.33",
     "tapable": "^2.2.1",
     "terser": "^5.15.0",
     "terser-webpack-plugin": "^5.3.6",
@@ -323,9 +328,19 @@
     "websocket-extensions": "^0.1.4",
     "which": "^2.0.2",
     "wildcard": "^2.0.0",
+    "workbox-webpack-plugin": "^6.5.4",
     "wrappy": "^1.0.2",
     "ws": "^8.8.1",
     "yallist": "^4.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mochrofiqi/Project-Dicoding-Expert.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Mochrofiqi/Project-Dicoding-Expert/issues"
+  },
+  "homepage": "https://github.com/Mochrofiqi/Project-Dicoding-Expert#readme",
   "description": ""
 }
