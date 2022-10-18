@@ -25,7 +25,7 @@ class Favorite {
 
     if (favoriteResto.length == 0) {
       Swal.fire({
-        text: "No favorite restaurants yet!",
+        text: "No Favorite Restaurants Yet!",
         icon: "warning",
       });
     }
