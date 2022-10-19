@@ -6,6 +6,7 @@ import '../styles/navbar.css';
 import '../styles/loading.css';
 import '../styles/detail.css';
 import '../scripts/view/navbar';
+import '../scripts/view/skip-content';
 import registerSW from './utils/register-sw';
 import Main from './view/main';
 

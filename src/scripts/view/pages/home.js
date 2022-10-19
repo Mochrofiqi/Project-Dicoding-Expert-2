@@ -27,11 +27,11 @@ class Home {
             sibuk. Makanan cepat saji tersedia dalam waktu cepat dan siap disantap seperti ayam goreng tepung, pizza,
             burger, kentang goreng, pasta, nugget, sosis, goreng-gorengan dan lain sebagainya.
           </p>
-          <p><a href="#daftar-resto" class="btn2">Daftar Restoran</a></p>
+          <p><a href="#content" class="btn2">Daftar Restoran</a></p>
         </div>
       </article>
 
-      <article class="content" id="daftar-resto">
+      <article class="content" id="content" tabindex="-1">
       <div class="tengah">
           <div class="kolom">
               <h2>Restoran Fast-Food</h2>

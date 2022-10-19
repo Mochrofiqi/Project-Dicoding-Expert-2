@@ -10,6 +10,12 @@ class Main {
     mainContent.innerHTML = await page.render();
 
     await page.afterRender();
+
+    const skipContentElement = document.querySelector('.skip');    
+    skipContentElement.addEventListener('click', (event) => {      
+    event.preventDefault();
+    document.querySelector('#content').focus();
+  });
   }
 }
 

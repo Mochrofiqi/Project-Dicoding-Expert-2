@@ -10,7 +10,7 @@ class Detail {
     return `
 
     <indicator-loading></indicator-loading>
-    <restaurant-detail id="#daftar-resto"></restaurant-detail>
+    <restaurant-detail class="content" id="content" tabindex="0"></restaurant-detail>
         
     `;
   }

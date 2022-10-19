@@ -9,9 +9,8 @@ class Favorite {
         <section class="hero">
             <h1 class="hero-judul">Your Favorite Restoran Fast Food!</h1>
         </section>
-
-        <div class="favorite">
-            <restaurant-list class="menu-list" id="content"></restaurant-list>
+        <div class="favorite" id="content" tabindex="0">
+            <restaurant-list class="menu-list"></restaurant-list>
         </div>
     `;
   }
