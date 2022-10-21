@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 import CONFIG from "../data/config";
-import "./button-save";
+// import "./button-save";
 
 class RestaurantDetail extends HTMLElement {
   set restaurantItem(item) {

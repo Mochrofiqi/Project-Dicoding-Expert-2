@@ -7,9 +7,15 @@ class Home {
   static async render() {
     return `
       <section class="hero">
-        <h1 class="hero-judul">Welcome to Restoran Fast Food!</h1>
+        <picture>
+            <source media="(min-width:601px)" srcset="./images/heros/hero-image_2-large.jpg">
+            <source media="(max-width:600px)" srcset="./images/heros/hero-image_2-small.jpg">
+            <img src="./images/heros/hero-image_2-large.jpg" alt="Heroes Image">
+        </picture>
+
+          <h1 class="hero-judul">Welcome to Restoran Fast Food!</h1>
       </section>
-    
+
       <indicator-loading></indicator-loading>
 
       <article class="head" id="home">
@@ -45,11 +51,11 @@ class Home {
   }
 
   static async afterRender() {
-    const heroElement = document.querySelector(".hero");
+    // const heroElement = document.querySelector(".hero");
     const loadingElement = document.querySelector("indicator-loading");
     const restaurantListElement = document.querySelector("restaurant-list");
 
-    heroElement.style.backgroundImage = "url('./images/heros/hero-image_2.jpg')";
+    // heroElement.style.backgroundImage = "url('./images/heros/hero-image_2.jpg')";
 
     try {
       const response = await ApiRepository.restaurantList();

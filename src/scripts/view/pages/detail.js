@@ -1,6 +1,7 @@
 import Swal from "sweetalert2";
 import ApiRepository from "../../data/api-repository";
 import Review from "../../utils/review";
+import ButtonSaveInitiator from "../../utils/button-save-initiator";
 import UrlParser from "../../routes/url-parser";
 import "../../component/indicator-loading";
 import "../../component/restaurant-detail";
@@ -11,6 +12,7 @@ class Detail {
 
     <indicator-loading></indicator-loading>
     <restaurant-detail class="content" id="content" tabindex="0"></restaurant-detail>
+    <div id="saveButtonContainer"></div>
         
     `;
   }
@@ -23,6 +25,11 @@ class Detail {
     try {
       const response = await ApiRepository.restaurantDetail(url.id);
       restaurantDetailElement.restaurantItem = response;
+
+      await ButtonSaveInitiator.init({
+        saveButtonContainer: document.querySelector('#saveButtonContainer'),
+        restaurant: response.restaurant,
+      });
     } catch (message) {
       restaurantDetailElement.renderError(message);
     } finally {
